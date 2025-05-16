@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boutiques Variedades</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #f9f9f9;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .produto {
+      display: inline-block;
+      width: 200px;
+      margin: 15px;
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px #ccc;
+      vertical-align: top;
+    }
+    .produto img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    form {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px #ccc;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #aaa;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #3f51b5;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #2c3e9a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Boutiques Variedades</h1>
+
+  <!-- Produtos -->
+  <div class="produto">
+    <img src="vestido-floral-infantil.jpg" alt="Vestido Floral Infantil" />
+    <h3>Vestido Floral Infantil</h3>
+    <p>R$ 45,00</p>
+  </div>
+  <div class="produto">
+    <img src="macacao-azul-bebe.jpg" alt="Macacão Azul Bebê" />
+    <h3>Macacão Azul Bebê</h3>
+    <p>R$ 39,00</p>
+  </div>
+  <div class="produto">
+    <img src="conjunto-listrado-feminino.jpg" alt="Conjunto Listrado Feminino" />
+    <h3>Conjunto Listrado Feminino</h3>
+    <p>R$ 55,00</p>
+  </div>
+
+  <!-- Formulário de pagamento -->
+  <h2>Formulário de Pagamento</h2>
+  <form action="#" method="post">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="produto">Produto desejado:</label>
+    <input type="text" id="produto" name="produto" placeholder="Ex: Vestido Floral Infantil" required />
+
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" name="quantidade" min="1" required />
+
+    <label for="endereco">Endereço de entrega:</label>
+    <textarea id="endereco" name="endereco" rows="3" required></textarea>
+
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</body>
+</html>
